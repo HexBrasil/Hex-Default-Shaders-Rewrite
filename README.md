@@ -1,4 +1,4 @@
-if you want to publish an modified version, or just modify it to help me as an colaborator, fork this github and send an pull request
+**if you want to publish an modified version, or just modify it to help me as an colaborator, fork this github and send an pull request**
 
 # About HVS Reworked
 
