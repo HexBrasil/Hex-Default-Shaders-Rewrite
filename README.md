@@ -35,3 +35,6 @@ Why my game keep Crashing in Optfine?
 > [RVShaders (Reflective Vanilla)](https://modrinth.com/shader/reflective-vanilla-shaders) - PBR Support
 
 **Screenshots:**
+![Beautiful Tectonic Generation + HVSR](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/e6bdb0a2-777d-4d87-b6ea-bbd66cf8fc1d)
+![Volumetric Light Testing](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/c5a9e32a-e58b-4a6a-af80-eae4969c819e)
+
