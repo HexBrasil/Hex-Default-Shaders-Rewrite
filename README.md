@@ -1,4 +1,4 @@
-**if you want to publish an modified version, or just modify it to help me as an colaborator, fork this github and send an pull request**
+![2024-04-24_17 12 18](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/9347db2f-592d-4c85-920c-f86c115d78e4)**if you want to publish an modified version, or just modify it to help me as an colaborator, fork this github and send an pull request**
 
 # About HVS Reworked
 
@@ -35,6 +35,16 @@ Why my game keep Crashing in Optfine?
 > [RVShaders (Reflective Vanilla)](https://modrinth.com/shader/reflective-vanilla-shaders) - PBR Support
 
 **Screenshots:**
+
+## Beautiful Tectonic Generation + HVSR
+
 ![Beautiful Tectonic Generation + HVSR](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/e6bdb0a2-777d-4d87-b6ea-bbd66cf8fc1d)
+
+## Volumetric Light Testing
+
 ![Volumetric Light Testing](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/c5a9e32a-e58b-4a6a-af80-eae4969c819e)
+
+## 4K Shadow Resolution + 2 ShadowResSamples + 2 ShadowSamplingNode
+
+![4K Shadow Resolution + 2 ShadowResSamples + 2 ShadowSamplingNode](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/7f49598e-6314-46d1-81d3-4376a6ee3cd9)
 
