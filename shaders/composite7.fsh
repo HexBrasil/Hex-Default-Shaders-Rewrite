@@ -9,7 +9,7 @@ uniform float rainStrength;
 uniform float viewWidth, viewHeight;
 vec2 texelSize = vec2(1.0 / viewWidth, 1.0 / viewHeight);
 
-#define KERNEL_SIZE 10
+#define KERNEL_SIZE 16
 #define SPREAD 4.0
 
 const float TWO_PI = 6.28319;

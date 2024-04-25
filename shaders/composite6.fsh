@@ -6,7 +6,7 @@ varying vec2 screenCoord;
 varying vec3 screenRay;
 varying float LdotV;
 
-const int noiseTextureResolution = 1028;
+const int noiseTextureResolution = 2048;
 
 uniform sampler2D gcolor;
 uniform sampler2D noisetex;
@@ -26,17 +26,17 @@ void main(){
     vec3 sceneCol = texelFetch(gcolor, screenTexelCoord, 0).rgb;
     float blueNoise = texelFetch(noisetex, screenTexelCoord & 255, 0).x;
 
-    const int stepSize = 55;
+    const int stepSize = 99;
     const float rcpStepSize = 1.0 / float(stepSize);
 
     const float rayLength = 1;
-    const float rayStrength = rcpStepSize / 20;
+    const float rayStrength = rcpStepSize / 55;
     const vec3 lightColor = vec3(1.5, 1.0, 0.55);
 
     vec2 endPos = (screenCoord - screenRay.xy) * rcpStepSize * rayLength;
     vec2 startPos = screenCoord - endPos * blueNoise;
 
-    float godRays = 0.0;
+    float godRays = 0.001;
 
     for(int i = 0; i < stepSize; i++){
         godRays += skyMask(startPos, rayStrength);

@@ -30,7 +30,7 @@ const int colortex2Format = RGB16;
 
 const float sunPathRotation = -40.0f;
 const int shadowMapResolution = 4096;
-const int noiseTextureResolution = 512;
+const int noiseTextureResolution = 1024;
 
 const float Ambient = 0.1f;
 
@@ -69,7 +69,7 @@ vec3 GetLightmapColor(in vec2 Lightmap){
 }
 
 float Visibility(in sampler2D ShadowMap, in vec3 SampleCoords) {
-    return step(SampleCoords.z - 0.001f, texture2D(ShadowMap, SampleCoords.xy).r);
+    return step(SampleCoords.z - 0f, texture2D(ShadowMap, SampleCoords.xy).r);
 }
 
 vec3 TransparentShadow(in vec3 SampleCoords){
@@ -81,7 +81,7 @@ vec3 TransparentShadow(in vec3 SampleCoords){
 }
 
 #define SHADOW_SAMPLES 2
-const int ShadowSamplesPerSize = 3 * SHADOW_SAMPLES + 1;
+const int ShadowSamplesPerSize = 2 * SHADOW_SAMPLES + 1;
 const int TotalSamples = ShadowSamplesPerSize * ShadowSamplesPerSize;
 
 vec3 GetShadow(float depth) {
