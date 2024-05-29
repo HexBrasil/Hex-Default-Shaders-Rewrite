@@ -1,50 +1,25 @@
-![2024-04-24_17 12 18](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/9347db2f-592d-4c85-920c-f86c115d78e4)**if you want to publish an modified version, or just modify it to help me as an colaborator, fork this github and send an pull request**
+if you want to publish an modified version, or just modify it to help me as an colaborator, fork this github and send an pull request
+[Hex's Github Rep](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/tree/main)
 
-# About HVS Reworked
+## What happened to Hexs Vanilla Shaders or Legacy Shaders?
 
-> A Shaderpack focused in the original Vanilla Style of Minecraft, but with Dynamic Soft Shadows, Volumetric Lights and others.
+They are still here, but now i am focusing on the new Rewrite one, fixed most of the bugs from older versions.
 
-> HVS Reworked is Still in Beta / Alpha Development Stage, stay tuned for more updates. And expect massive / major changes in each Update.
+## What is HDFR?
 
-### FeedBack / Bug Reports
-> Ping @ahlan_hex in the ShaderLabs discord, or add my alt! (stanmrshscool)
+It's my Own shader! But now i rewrited some useful parts, and fixed most of the bugs.
+Made for myself, but now for everyone! Now working with Iris 1.6.17+.
 
-# Why it got created, and who created?
+## Github Repository
 
-> Made by Hex. (ahlan_atorio)
-> This is my First official shaders in Minecraft community. This is the first shader I created > with my Own code, using shaderlab ```#version 120``` package.
+I am needing ppl to help me to fix these things:
 
-# **Features and Upcoming Features**
+Gbuffers_Terrain / Composite: Every entity is transparent, and i dont know how to fix it.
 
-> 1. **Colored Lightning (Upcoming, see FAQ)**;
-> 2. **Volumetric Lightning**;
+If you can help me, send an request to the git rep.
 
-
-## FAQ
-   What is Colored Lightning?
--  As the name says, it simulates Colored Lightning. Example: Torches have orange light colors and sea lanterns have blue light color. Search for it, i can't explain it complete.
-
-Why my game keep Crashing in Optfine?
--    This shader was made for Optfine 1.20.1+ or Iris 1.17+
 
 # Credits
 > [saada2006 Shader Tutorial](https://github.com/saada2006/MinecraftShaderProgramming/tree/master) - Used as the first base to the shader.
 
 > [Acerola's Channel](https://www.youtube.com/@Acerola_t) - Watched the Shaders video, then created some post processing techniques.
-
-> [RVShaders (Reflective Vanilla)](https://modrinth.com/shader/reflective-vanilla-shaders) - PBR Support
-
-**Screenshots:**
-
-## Beautiful Tectonic Generation + HVSR
-
-![Beautiful Tectonic Generation + HVSR](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/e6bdb0a2-777d-4d87-b6ea-bbd66cf8fc1d)
-
-## Volumetric Light Testing
-
-![Volumetric Light Testing](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/c5a9e32a-e58b-4a6a-af80-eae4969c819e)
-
-## 4K Shadow Resolution + 2 ShadowResSamples + 2 ShadowSamplingNode
-
-![4K Shadow Resolution + 2 ShadowResSamples + 2 ShadowSamplingNode](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/7f49598e-6314-46d1-81d3-4376a6ee3cd9)
-
