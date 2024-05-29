@@ -9,7 +9,7 @@ uniform float near, far;
 uniform float rainStrength;
 
 #define FOG_DENSITY 0.001
-#define RAIN_MODIFIER 0.035
+#define RAIN_MODIFIER 0.011
 
 /*
 const int colortex0Format = RGBA32F;
@@ -42,7 +42,7 @@ void main() {
     float density = FOG_DENSITY + (RAIN_MODIFIER * rainStrength);
 
     if (depth > 0.99999f)
-        density *= mix(0.9f, 2.0f, rainStrength);
+        density *= mix(0.2f, 1.0f, rainStrength);
 
     float fogFactor1 = FogExp(viewDistance, density);
     float fogFactor2 = FogExp2(viewDistance, density);

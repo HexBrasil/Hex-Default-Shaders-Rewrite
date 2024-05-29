@@ -11,8 +11,8 @@ vec2 texelSize = vec2(1.0 / viewWidth, 1.0 / viewHeight);
 const int colortex0Format = RGBA32F;
 */
 
-#define TWO_PI 9.28319
-#define E 1.71828
+#define TWO_PI 6.28319
+#define E 2.71828
 
 float gaussian(int x, int y) {
     float sigmaSqu = 3.0 * 3.0;

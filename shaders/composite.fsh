@@ -28,15 +28,15 @@ const int colortex1Format = RGB16;
 const int colortex2Format = RGB16;
 */
 
-const float sunPathRotation = -40.0f;
-const int shadowMapResolution = 4096;
-const int noiseTextureResolution = 1024;
+const float sunPathRotation = -35.0f;
+const int shadowMapResolution = 2048;
+const int noiseTextureResolution = 512;
 
-const float Ambient = 0.1f;
+const float Ambient = 0.15f;
 
 float AdjustLightmapTorch(in float torch) {
-    const float K = 2.0f;
-    const float P = 5.06f;
+    const float K = 7.0f;
+    const float P = 2.06f;
     return K * pow(torch, P);
 }
 
@@ -57,8 +57,8 @@ vec3 GetLightmapColor(in vec2 Lightmap){
     // First adjust the lightmap
     Lightmap = AdjustLightmap(Lightmap);
     // Color of the torch and sky. The sky color changes depending on time of day but I will ignore that for simplicity
-    const vec3 TorchColor = vec3(1.0f, 0.25f, 0.08f);
-    const vec3 SkyColor = vec3(0.1f, 0.15f, 0.8f);
+    const vec3 TorchColor = vec3(0.3f, 0.3f, 0.13f);
+    const vec3 SkyColor = vec3(0.00f, 0.0f, 0.9f);
     // Multiply each part of the light map with it's color
     vec3 TorchLighting = Lightmap.x * TorchColor;
     vec3 SkyLighting = Lightmap.y * SkyColor;
@@ -69,19 +69,19 @@ vec3 GetLightmapColor(in vec2 Lightmap){
 }
 
 float Visibility(in sampler2D ShadowMap, in vec3 SampleCoords) {
-    return step(SampleCoords.z - 0f, texture2D(ShadowMap, SampleCoords.xy).r);
+    return step(SampleCoords.z - 0.000f, texture2D(ShadowMap, SampleCoords.xy).r);
 }
 
 vec3 TransparentShadow(in vec3 SampleCoords){
     float ShadowVisibility0 = Visibility(shadowtex0, SampleCoords);
     float ShadowVisibility1 = Visibility(shadowtex1, SampleCoords);
     vec4 ShadowColor0 = texture2D(shadowcolor0, SampleCoords.xy);
-    vec3 TransmittedColor = ShadowColor0.rgb * (1.0f - ShadowColor0.a); // Perform a blend operation with the sun color
+    vec3 TransmittedColor = ShadowColor0.rgb * (1.5f - ShadowColor0.a); // Perform a blend operation with the sun color
     return mix(TransmittedColor * ShadowVisibility1, vec3(1.0f), ShadowVisibility0);
 }
 
-#define SHADOW_SAMPLES 2
-const int ShadowSamplesPerSize = 2 * SHADOW_SAMPLES + 1;
+#define SHADOW_SAMPLES 3
+const int ShadowSamplesPerSize = 1 * SHADOW_SAMPLES + 1;
 const int TotalSamples = ShadowSamplesPerSize * ShadowSamplesPerSize;
 
 vec3 GetShadow(float depth) {
@@ -113,7 +113,7 @@ void main(){
     vec3 Albedo = pow(texture2D(colortex0, TexCoords).rgb, vec3(2.2f));
     float Depth = texture2D(depthtex0, TexCoords).r;
     if(Depth == 1.0f){
-        gl_FragData[0] = vec4(Albedo, 1.0f);
+        gl_FragData[0] = vec4(Albedo, 1.5f);
         return;
     }
     // Get the normal
