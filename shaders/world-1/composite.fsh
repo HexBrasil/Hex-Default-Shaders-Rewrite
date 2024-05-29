@@ -32,10 +32,10 @@ const float sunPathRotation = -35.0f;
 const int shadowMapResolution = 2048;
 const int noiseTextureResolution = 512;
 
-const float Ambient = 0.15f;
+const float Ambient = 0.10f;
 
 float AdjustLightmapTorch(in float torch) {
-    const float K = 7.0f;
+    const float K = 2.0f;
     const float P = 2.06f;
     return K * pow(torch, P);
 }
@@ -77,7 +77,7 @@ vec3 TransparentShadow(in vec3 SampleCoords){
     float ShadowVisibility1 = Visibility(shadowtex1, SampleCoords);
     vec4 ShadowColor0 = texture2D(shadowcolor0, SampleCoords.xy);
     vec3 TransmittedColor = ShadowColor0.rgb * (1.5f - ShadowColor0.a); // Perform a blend operation with the sun color
-    return mix(TransmittedColor * ShadowVisibility1, vec3(1.0f), ShadowVisibility0);
+    return mix(TransmittedColor * ShadowVisibility1, vec3(2.0f), ShadowVisibility0);
 }
 
 #define SHADOW_SAMPLES 3
