@@ -23,3 +23,11 @@ If you can help me, send an request to the git rep.
 > [saada2006 Shader Tutorial](https://github.com/saada2006/MinecraftShaderProgramming/tree/master) - Used as the first base to the shader.
 
 > [Acerola's Channel](https://www.youtube.com/@Acerola_t) - Watched the Shaders video, then created some post processing techniques.
+>
+## Screenshots
+![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/d9775aa5-8fc9-4993-b381-e06b178a2990)
+
+
+
+![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/3e24f60e-71eb-4643-90e4-7b2123cf19a0)
+
