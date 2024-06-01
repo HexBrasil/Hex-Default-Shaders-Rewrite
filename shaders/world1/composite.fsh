@@ -28,11 +28,11 @@ const int colortex1Format = RGB16;
 const int colortex2Format = RGB16;
 */
 
-const float sunPathRotation = -35.0f;
+const float sunPathRotation = -50.0f;
 const int shadowMapResolution = 2048;
-const int noiseTextureResolution = 1024;
+const int noiseTextureResolution = 512;
 
-const float Ambient = 0.2f;
+const float Ambient = 0.09f;
 
 float AdjustLightmapTorch(in float torch) {
     const float K = 3.0f;
@@ -58,7 +58,7 @@ vec3 GetLightmapColor(in vec2 Lightmap){
     Lightmap = AdjustLightmap(Lightmap);
     // Color of the torch and sky. The sky color changes depending on time of day but I will ignore that for simplicity
     const vec3 TorchColor = vec3(1f, 1f, 1f);
-    const vec3 SkyColor = vec3(1.00f, 1.0f, 1.9f);
+    const vec3 SkyColor = vec3(0.00f, 0.0f, 0.9f);
     // Multiply each part of the light map with it's color
     vec3 TorchLighting = Lightmap.x * TorchColor;
     vec3 SkyLighting = Lightmap.y * SkyColor;
@@ -80,8 +80,8 @@ vec3 TransparentShadow(in vec3 SampleCoords){
     return mix(TransmittedColor * ShadowVisibility1, vec3(2.0f), ShadowVisibility0);
 }
 
-#define SHADOW_SAMPLES 3
-const int ShadowSamplesPerSize = 1 * SHADOW_SAMPLES + 1;
+#define SHADOW_SAMPLES 1
+const int ShadowSamplesPerSize = 2 * SHADOW_SAMPLES + 1;
 const int TotalSamples = ShadowSamplesPerSize * ShadowSamplesPerSize;
 
 vec3 GetShadow(float depth) {
@@ -96,7 +96,7 @@ vec3 GetShadow(float depth) {
     float cosTheta = cos(RandomAngle);
 	float sinTheta = sin(RandomAngle);
     mat2 Rotation =  mat2(cosTheta, -sinTheta, sinTheta, cosTheta) / shadowMapResolution; // We can move our division by the shadow map resolution here for a small speedup
-    vec3 ShadowAccum = vec3(15.0f);
+    vec3 ShadowAccum = vec3(0.0f);
     for(int x = -SHADOW_SAMPLES; x <= SHADOW_SAMPLES; x++){
         for(int y = -SHADOW_SAMPLES; y <= SHADOW_SAMPLES; y++){
             vec2 Offset = Rotation * vec2(x, y);

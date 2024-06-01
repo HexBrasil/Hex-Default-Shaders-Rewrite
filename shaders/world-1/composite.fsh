@@ -35,7 +35,7 @@ const int noiseTextureResolution = 512;
 const float Ambient = 0.10f;
 
 float AdjustLightmapTorch(in float torch) {
-    const float K = 2.0f;
+    const float K = 4.0f;
     const float P = 2.06f;
     return K * pow(torch, P);
 }
@@ -57,7 +57,7 @@ vec3 GetLightmapColor(in vec2 Lightmap){
     // First adjust the lightmap
     Lightmap = AdjustLightmap(Lightmap);
     // Color of the torch and sky. The sky color changes depending on time of day but I will ignore that for simplicity
-    const vec3 TorchColor = vec3(0.3f, 0.3f, 0.13f);
+    const vec3 TorchColor = vec3(1.3f, 1.3f, 1.13f);
     const vec3 SkyColor = vec3(0.00f, 0.0f, 0.9f);
     // Multiply each part of the light map with it's color
     vec3 TorchLighting = Lightmap.x * TorchColor;

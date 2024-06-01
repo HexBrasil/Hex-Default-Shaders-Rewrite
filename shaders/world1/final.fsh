@@ -22,7 +22,7 @@ void main() {
     vec3 mapped = Uncharted2Tonemap(Color);
 
     // Perform additional adjustments if necessary (e.g., exposure)
-    float exposure = 2.6;
+    float exposure = 2.1;
     mapped *= exposure;
 
     // Reapply gamma correction
