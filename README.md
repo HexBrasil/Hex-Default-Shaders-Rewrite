@@ -25,9 +25,11 @@ If you can help me, send an request to the git rep.
 > [Acerola's Channel](https://www.youtube.com/@Acerola_t) - Watched the Shaders video, then created some post processing techniques.
 >
 ## Screenshots
-![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/d9775aa5-8fc9-4993-b381-e06b178a2990)
+![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/eb272b6a-21e5-415c-8157-303c79557c0a)
+
+
+![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/0d9e822c-e0c8-4f6d-8528-39c2000a6d30)
 
 
 
-![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/3e24f60e-71eb-4643-90e4-7b2123cf19a0)
-
+![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/c0f693bb-629b-4d68-babc-23d209515626)
