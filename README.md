@@ -28,7 +28,8 @@ If you can help me, send an request to the git rep.
 ![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/eb272b6a-21e5-415c-8157-303c79557c0a)
 
 
-![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/3fa54731-7e12-4318-b20c-9edf6628fa68)
+![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/0d9e822c-e0c8-4f6d-8528-39c2000a6d30)
+
 
 
 ![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/c0f693bb-629b-4d68-babc-23d209515626)
