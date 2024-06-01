@@ -31,5 +31,19 @@ If you can help me, send an request to the git rep.
 ![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/0d9e822c-e0c8-4f6d-8528-39c2000a6d30)
 
 
-
 ![image](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/c0f693bb-629b-4d68-babc-23d209515626)
+
+
+## High-Medium Version:
+
+![HighTesting](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/95aad491-d3b3-49c2-afef-b1af2d72459c)
+![2024-05-31_21 39 56](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/213a34bf-645f-43d9-ae24-f755364933a2)
+
+
+## Toaster Version:
+
+![LowTesting](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/32ad8581-9cdb-4853-9720-6e573bf16cec)
+![2024-05-31_21 40 03](https://github.com/HexBrasil/Hex-Vanilla-Shaders-Reworked/assets/166333508/8141763b-9c70-4edb-aa41-a57de89cef40)
+
+
+
