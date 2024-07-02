@@ -4,6 +4,7 @@ varying vec2 TexCoords;
 varying vec2 LightmapCoords;
 varying vec3 Normal;
 varying vec4 Color;
+varying vec3 viewSpacePosition;
 
 void main() {
     // Transform the vertex
@@ -16,4 +17,6 @@ void main() {
     LightmapCoords = (LightmapCoords * 33.05f / 32.0f) - (1.05f / 32.0f);
     Normal = gl_NormalMatrix * gl_Normal;
     Color = gl_Color;
+
+    viewSpacePosition = (gl_ModelViewMatrix * gl_Vertex).xyz;
 }

@@ -5,7 +5,7 @@ varying vec2 uv;
 uniform sampler2D colortex0;
 
 uniform float viewWidth, viewHeight;
-vec2 texelSize = vec2(1.0 / viewWidth, 1.0 / viewHeight);
+vec2 texelSize = vec2(5.0 / viewWidth, 1.0 / viewHeight);
 
 /*
 const int colortex0Format = RGBA32F;

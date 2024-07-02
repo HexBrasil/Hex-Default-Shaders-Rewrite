@@ -29,10 +29,10 @@ const int colortex2Format = RGB16;
 */
 
 const float sunPathRotation = -35.0f;
-const int shadowMapResolution = 512;
-const int noiseTextureResolution = 128;
+const int shadowMapResolution = 2048;
+const int noiseTextureResolution = 1024;
 
-const float Ambient = 0.2f;
+const float Ambient = 0.5f;
 
 float AdjustLightmapTorch(in float torch) {
     const float K = 3.0f;
@@ -58,7 +58,7 @@ vec3 GetLightmapColor(in vec2 Lightmap){
     Lightmap = AdjustLightmap(Lightmap);
     // Color of the torch and sky. The sky color changes depending on time of day but I will ignore that for simplicity
     const vec3 TorchColor = vec3(1f, 1f, 1f);
-    const vec3 SkyColor = vec3(1.00f, 1.0f, 1.9f);
+    const vec3 SkyColor = vec3(0.00f, 0.0f, 0.0f);
     // Multiply each part of the light map with it's color
     vec3 TorchLighting = Lightmap.x * TorchColor;
     vec3 SkyLighting = Lightmap.y * SkyColor;
@@ -80,7 +80,7 @@ vec3 TransparentShadow(in vec3 SampleCoords){
     return mix(TransmittedColor * ShadowVisibility1, vec3(2.0f), ShadowVisibility0);
 }
 
-#define SHADOW_SAMPLES 1
+#define SHADOW_SAMPLES 5
 const int ShadowSamplesPerSize = 1 * SHADOW_SAMPLES + 1;
 const int TotalSamples = ShadowSamplesPerSize * ShadowSamplesPerSize;
 
